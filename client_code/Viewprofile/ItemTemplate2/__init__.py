@@ -1,7 +1,9 @@
-from ._anvil_designer import Form1Template
+from ._anvil_designer import ItemTemplate2Template
 from anvil import *
+import anvil.users
+import anvil.server
 
-class Form1(Form1Template):
+class ItemTemplate2(ItemTemplate2Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

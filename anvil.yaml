@@ -1,12 +1,195 @@
-allow_embedding: false
-package_name: Wallet_App
-name: Wallet App
-startup_form: Form1
-renamed: true
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
 dependencies: []
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+- source: /runtime/services/anvil/users.yml
+  client_config: {allow_signup: false, enable_automatically: true, use_email: true,
+    confirm_email: true}
+  server_config: {user_table: users}
+startup: {type: form, module: Home}
+package_name: Wallet_App
+allow_embedding: false
+name: Wallet App
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+startup_form: null
+db_schema:
+  users:
+    client: full
+    server: full
+    columns:
+    - name: password
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: usertype
+      admin_ui: {order: 2, width: 200}
+      type: string
+    - name: pan
+      admin_ui: {order: 1.875, width: 200}
+      type: string
+    - name: address
+      admin_ui: {order: 1.9375, width: 200}
+      type: string
+    - name: confirmed
+      admin_ui: {width: 200, order: 7}
+      type: bool
+    - name: phone
+      admin_ui: {order: 1.5, width: 200}
+      type: number
+    - name: aadhar
+      admin_ui: {order: 1.75, width: 200}
+      type: number
+    - name: username
+      admin_ui: {order: -1, width: 200}
+      type: string
+    - name: email
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: banned
+      admin_ui: {width: 200, order: 9}
+      type: bool
+    - name: hold
+      admin_ui: {order: 10, width: 200}
+      type: bool
+    - name: confirmed_email
+      admin_ui: {width: 200}
+      type: bool
+    - name: enabled
+      admin_ui: {width: 200}
+      type: bool
+    - name: daily_limit_set
+      admin_ui: {order: 14.875, width: 200}
+      type: string
+    - name: top_up
+      admin_ui: {order: 14.25, width: 200}
+      type: bool
+    - name: top_up_amount
+      admin_ui: {width: 200}
+      type: string
+    - name: last_login
+      admin_ui: {width: 200, order: 17.25}
+      type: date
+    - name: limit
+
+      admin_ui: {order: 14.5, width: 200}
+=======
+      
+      type: string
+    title: users
+  accounts:
+    client: full
+    server: full
+    columns:
+    - name: casa
+      admin_ui: {order: 0, width: 178}
+      type: number
+    - name: bank_name
+      admin_ui: {order: 4, width: 185}
+      type: string
+    - name: ifsc_code
+      admin_ui: {order: 9, width: 188}
+      type: string
+    - name: user
+      admin_ui: {order: 0, width: 157}
+      type: string
+    - name: e_wallet
+      admin_ui: {order: 1.25, width: 201}
+      type: string
+    - name: account_holder_name
+      admin_ui: {order: 7, width: 214}
+      type: string
+    - name: branch_name
+      admin_ui: {order: 8, width: 180}
+      type: string
+    - name: account_Type
+      admin_ui: {order: 6, width: 200}
+      type: string
+    - name: e_money
+      admin_ui: {order: 3.125, width: 200}
+      type: string
+    title: accounts
+  transactions:
+    client: full
+    server: full
+    columns:
+    - name: user
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: date
+      admin_ui: {order: 2.5, width: 200}
+      type: datetime
+    - name: e_wallet
+      admin_ui: {order: 1.125, width: 200}
+      type: string
+    - name: money
+      admin_ui: {width: 200, order: 1.5}
+      type: string
+    - name: casa
+      admin_ui: {width: 200}
+      type: number
+    - name: transaction_type
+      admin_ui: {order: 5, width: 246}
+      type: string
+    - name: proof
+      admin_ui: {width: 200, order: 6}
+      type: string
+    title: transactions
+  currencies:
+    client: full
+    server: full
+    columns:
+    - name: money_usd
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: money_euro
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: money_swis
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: money_inr
+      admin_ui: {width: 200, order: 4}
+      type: string
+    - name: user
+      admin_ui: {width: 200, order: -1}
+      type: string
+    - name: casa
+      admin_ui: {order: -0.5, width: 200}
+      type: number
+    - name: e_wallet
+      admin_ui: {width: 200, order: 6}
+      type: string
+    title: currencies
+  sevices:
+    client: full
+    server: full
+    columns:
+    - name: Query
+      admin_ui: {order: 3, width: 200}
+      type: string
+    - name: phone
+      admin_ui: {order: 2.5, width: 200}
+      type: number
+    - name: username
+      admin_ui: {order: 2, width: 200}
+      type: string
+    title: Sevices
+  actions:
+    client: full
+    server: full
+    columns:
+    - name: username
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: changes
+      admin_ui: {order: 4.5, width: 264}
+      type: string
+    - name: admin_email
+      admin_ui: {order: 5, width: 200}
+      type: string
+    - name: date
+      admin_ui: {order: 4.75, width: 200}
+      type: datetime
+    title: actions
+renamed: true

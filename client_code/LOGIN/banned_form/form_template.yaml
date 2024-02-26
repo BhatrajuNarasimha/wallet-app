@@ -1,0 +1,55 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - name: label_1
+    properties: {text: 'REASON FOR  HOLD:', foreground: 'theme:Error', bold: true,
+      font: '', font_size: 25}
+    type: Label
+    layout_properties: {grid_position: 'EUMICD,DCMSEQ'}
+  - name: text_area_1
+    properties: {text: "\u27a1Notification of Action:\n      We regret to inform you\
+        \ that your digital wallet on our platform is being deleted.\n\n\u27a1Reasons\
+        \ for Deletion:\n      This action is taken due to [briefly mention specific\
+        \ reasons such as policy violations, \n      security concerns, etc.].\n\n\
+        \u27a1Security and Compliance:\n      Ensuring the security and compliance\
+        \ of our platform is our top priority.\n\n\u27a1Terms of Service Violation:\n\
+        \     Your actions were found to be in violation of our Terms of Service,\
+        \ which are in place to \n     maintain a safe and fair environment for all\
+        \ users.\n\n\u27a1Data Protection and Privacy:\n   Your personal information\
+        \ will be handled in accordance with our privacy policy, ensuring \n   secure\
+        \ and responsible data management.\n\n\u27a1Alternative Solutions (if applicable):\n\
+        \    Unfortunately, there are no alternative solutions available in this case.\n\
+        \n\u27a1Communication of Policy Changes (if applicable):\n    If applicable,\
+        \ this deletion may be a result of recent policy changes. Stay informed about\
+        \ \n    any updates through our communication channels.\n\n\u27a1User Responsibility:\n\
+        \    We remind all users of their responsibility to adhere to our platform\
+        \ guidelines and best \n    practices.\n\n\u27a1Contact Information for Questions:\n\
+        \    If you have any questions or concerns regarding this action, please feel\
+        \ free to reach out \n    to our customer support team at [provide contact\
+        \ details].\n\n\u27a1Apology and Regret (if applicable):\n    We apologize\
+        \ for any inconvenience this may cause and appreciate your understanding \n\
+        \    as we work to maintain a secure digital environment.", height: 651.25,
+      bold: true}
+    type: TextArea
+    layout_properties: {grid_position: 'PEOAYJ,NAEQHL'}
+  - name: label_2
+    properties: {text: 'PLEASE WITHDRAW YOUR MONEY WITH IN 15 DAYS ', background: 'theme:Surface',
+      foreground: 'theme:Error', font_size: 18, bold: true}
+    type: Label
+    layout_properties: {grid_position: 'HGBUXR,QEBJIJ'}
+  - name: button_1
+    properties: {text: Withdraw, role: filled-button}
+    type: Button
+    layout_properties: {grid_position: 'HGBUXR,IPWZIJ'}
+    event_bindings: {click: button_1_click}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}

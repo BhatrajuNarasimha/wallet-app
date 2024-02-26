@@ -1,0 +1,44 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Email:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_1
+  layout_properties: {grid_position: 'BTRCIX,OJNQNK'}
+- type: TextBox
+  properties: {}
+  name: text_box_1
+  layout_properties: {grid_position: 'BTRCIX,TEEKWO'}
+  data_bindings:
+  - {property: text, code: 'self.item[''email'']', writeback: true}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Pan card:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_2
+  layout_properties: {grid_position: 'BRYDHJ,LFKRGK'}
+- type: TextBox
+  properties: {}
+  name: text_box_2
+  layout_properties: {grid_position: 'BRYDHJ,PPJJKF'}
+  data_bindings:
+  - {property: text, code: 'self.item[''pan'']', writeback: true}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Aadhar card:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_3
+  layout_properties: {grid_position: 'YIXBTZ,SWBFSX'}
+- type: TextBox
+  properties: {}
+  name: text_box_3
+  layout_properties: {grid_position: 'YIXBTZ,CFSDBC'}
+  data_bindings:
+  - {property: text, code: 'self.item[''aadhar'']', writeback: true}
+is_package: true

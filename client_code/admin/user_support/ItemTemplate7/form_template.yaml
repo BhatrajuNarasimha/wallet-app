@@ -1,0 +1,29 @@
+is_package: true
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {background: ''}
+  type: Label
+  layout_properties: {grid_position: 'QXKFDU,ABHSYV'}
+  data_bindings:
+  - {property: text, code: 'self.item[''username'']'}
+- name: label_2
+  properties: {background: ''}
+  type: Label
+  layout_properties: {grid_position: 'QXKFDU,ZCLKSE'}
+  data_bindings:
+  - {property: text, code: 'self.item[''phone'']'}
+- name: label_3
+  properties: {background: ''}
+  type: Label
+  layout_properties: {grid_position: 'QXKFDU,GYVMRI'}
+  data_bindings:
+  - {property: text, code: 'self.item[''Query'']'}
+- name: button_1
+  properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: Solved, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#3FE5FF',
+    bold: false, underline: false, icon: ''}
+  type: Button
+  layout_properties: {grid_position: 'QXKFDU,JCCNGL'}
+  event_bindings: {click: button_1_click}

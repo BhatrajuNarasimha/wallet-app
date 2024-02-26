@@ -1,0 +1,124 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"LFQWVT":50,"HPNNGW":10}'}
+components:
+- name: flow_panel_1
+  properties: {}
+  type: FlowPanel
+  layout_properties: {grid_position: 'FKIEVS,XXYHLO', full_width_row: true}
+  components:
+  - name: image_1_copy
+    properties: {role: null, vertical_align: center, height: 44.80000305175781, tooltip: '',
+      border: '', foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
+      source: _/theme/GW-logo.jpg, spacing_below: small, background: white, horizontal_align: right}
+    type: Image
+    layout_properties: {width: 89.19999694824219}
+  - name: label_7_copy_2
+    properties: {text: 'G-Wallet         ', font_size: 25, align: left, bold: true,
+      font: a, italic: false, underline: false, foreground: black}
+    type: Label
+    layout_properties: {}
+  - name: spacer_4
+    properties: {height: 46.75}
+    type: Spacer
+    layout_properties: {width: 336}
+  - name: column_panel_1
+    properties: {background: white, col_widths: '{"FKFVNM":26,"LDONGM":11,"EKRNNM":9,"DAOHBK":12}',
+      col_spacing: medium}
+    type: ColumnPanel
+    layout_properties: {width: 833.1500244140625, expand: true}
+    components:
+    - name: link_8_copy
+      properties: {text: Home, align: right, bold: false, foreground: '#000', font_size: 15}
+      type: Link
+      layout_properties: {grid_position: 'JXFFNM,FKFVNM'}
+      event_bindings: {click: link_8_copy_click}
+    - name: link_9_copy
+      properties: {text: About, align: center, bold: false, foreground: black, font_size: 15,
+        col_spacing: tiny}
+      type: Link
+      layout_properties: {grid_position: 'JXFFNM,LDONGM'}
+    - name: link_10_copy
+      properties: {text: User Support, bold: false, align: center, foreground: black,
+        font_size: 15, background: white}
+      type: Link
+      layout_properties: {grid_position: 'JXFFNM,EKRNNM', full_width_row: true}
+      event_bindings: {click: link_10_copy_click}
+    - name: button_8
+      properties: {text: Logout, role: filled-button, background: '#1d86da'}
+      type: Button
+      layout_properties: {grid_position: 'JXFFNM,DAOHBK'}
+      event_bindings: {click: button_8_click}
+- type: Button
+  properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '#000000', visible: true, text: users, font_size: null, font: '',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: true, underline: false, icon: ''}
+  name: button_1
+  layout_properties:
+    col_widths: {}
+    grid_position: DBZYGI,GZDWBP
+  event_bindings: {click: button_1_click}
+- type: TextBox
+  properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: 'type
+      to search ', border: '', enabled: true, foreground: '', visible: true, text: '',
+    font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+    italic: false, background: l, bold: false, underline: false}
+  name: text_box_1
+  layout_properties:
+    col_widths: {}
+    grid_position: GFPUMX,LFQWVT
+- type: Button
+  properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '#000000', visible: true, text: '', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#1d86da',
+    bold: true, underline: false, icon: 'fa:search'}
+  name: button_2
+  layout_properties:
+    col_widths: {}
+    grid_position: GFPUMX,HPNNGW
+  event_bindings: {click: button_2_click}
+- name: image_1
+  properties: {source: _/theme/2342.png_860-removebg-preview.png, height: 329.3999328613281,
+    display_mode: shrink_to_fit}
+  type: Image
+  layout_properties:
+    col_widths: {}
+    grid_position: HNTQFT,FJDBVF
+- type: ColumnPanel
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '', spacing_below: small,
+    background: ''}
+  name: outlined_card_1
+  layout_properties: {grid_position: 'HKYNFN,XZDRXL'}
+  components: []
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Username:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: true, background: '', bold: true, underline: false,
+    icon: ''}
+  name: label_1
+  layout_properties: {grid_position: 'OJWMBH,JSRGLJ'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Phone:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: true, background: '', bold: true, underline: false,
+    icon: ''}
+  name: label_2
+  layout_properties: {grid_position: 'OJWMBH,GUCOIS'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Email:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: true, background: '', bold: true, underline: false,
+    icon: ''}
+  name: label_3
+  layout_properties: {grid_position: 'OJWMBH,NSVMQB'}
+- type: Label
+  properties: {}
+  name: label_4
+  layout_properties: {grid_position: 'OJWMBH,TBPUMN'}
+- type: RepeatingPanel
+  properties: {item_template: admin.account_management.ItemTemplate6}
+  name: repeating_panel_1
+  layout_properties: {grid_position: 'VZDBAF,XIYWCW'}
+is_package: true

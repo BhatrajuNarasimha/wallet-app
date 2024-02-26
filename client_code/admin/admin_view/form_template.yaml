@@ -1,0 +1,357 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {tooltip: '', background: '#3FE5FF', foreground: '', border: '', visible: true,
+    role: null, html: ''}
+components:
+- type: ColumnPanel
+  properties: {role: outlined-card, col_widths: '{}'}
+  name: outlined_card_2
+  layout_properties: {slot: default}
+  components:
+  - name: flow_panel_1
+    properties: {}
+    type: FlowPanel
+    layout_properties: {grid_position: 'QJPOVR,RFLMAJ', full_width_row: true}
+    components:
+    - name: image_1_copy
+      properties: {role: null, vertical_align: center, height: 44.80000305175781,
+        tooltip: '', border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
+        spacing_above: small, source: _/theme/GW-logo.jpg, spacing_below: small, background: white,
+        horizontal_align: right}
+      type: Image
+      layout_properties: {width: 89.19999694824219}
+    - name: label_7_copy_2
+      properties: {text: 'G-Wallet         ', font_size: 25, align: left, bold: true,
+        font: a, italic: false, underline: false, foreground: black}
+      type: Label
+      layout_properties: {}
+    - name: spacer_4_copy
+      properties: {height: 46.75}
+      type: Spacer
+      layout_properties: {width: 285}
+    - name: column_panel_1
+      properties: {background: white, col_widths: '{"FKFVNM":26,"LDONGM":11,"EKRNNM":9,"DAOHBK":12}',
+        col_spacing: medium}
+      type: ColumnPanel
+      layout_properties: {width: 833.1500244140625, expand: true}
+      components:
+      - name: link_8_copy
+        properties: {text: Home, align: right, bold: false, foreground: '#000', font_size: 15}
+        type: Link
+        layout_properties: {grid_position: 'JXFFNM,FKFVNM'}
+        event_bindings: {click: link_8_copy_click}
+      - name: link_9_copy
+        properties: {text: About, align: center, bold: false, foreground: black, font_size: 15,
+          col_spacing: tiny}
+        type: Link
+        layout_properties: {grid_position: 'JXFFNM,LDONGM'}
+      - name: link_10_copy
+        properties: {text: User Support, bold: false, align: center, foreground: black,
+          font_size: 15, background: white}
+        type: Link
+        layout_properties: {grid_position: 'JXFFNM,EKRNNM', full_width_row: true}
+        event_bindings: {click: link_10_copy_click}
+      - name: button_8
+        properties: {text: Logout, role: filled-button, background: '#1d86da'}
+        type: Button
+        layout_properties: {grid_position: 'JXFFNM,DAOHBK'}
+        event_bindings: {click: button_8_click}
+  - type: Image
+    properties: {role: null, vertical_align: center, height: '200', tooltip: '', border: '',
+      foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
+      source: 'data:image/jpeg;base64,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',
+      spacing_below: small, background: '', horizontal_align: center}
+    name: image_1
+    layout_properties: {grid_position: 'VZBHTJ,NXZWTU'}
+  - type: Button
+    properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '#000000', visible: true, text: Freeze, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '#0770FF', bold: true, underline: false, icon: ''}
+    name: button_5
+    layout_properties: {grid_position: 'RBBPSU,VJLLSQ', slot: default}
+    event_bindings: {click: button_5_click}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_2
+    layout_properties: {grid_position: 'IBKWRZ,YAMGLQ'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Account Details:', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '#3FE5FF',
+      bold: true, underline: false, icon: ''}
+    name: label_14
+    layout_properties: {grid_position: 'EELUMQ,KFAOSW'}
+  - name: label_8
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Accounts:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    type: Label
+    layout_properties: {grid_position: 'YZJNJI,GMGBNG'}
+  - name: drop_down_1
+    properties:
+      role: null
+      align: full
+      tooltip: ''
+      placeholder: Select Account
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: '#DFFDFF'
+      bold: false
+      underline: false
+      include_placeholder: true
+    type: DropDown
+    layout_properties: {grid_position: 'YZJNJI,ZAWTJA'}
+  - name: button_4
+    properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '#000000', visible: true, text: Account Balance, font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '#0770FF', bold: true, underline: false, icon: ''}
+    type: Button
+    layout_properties: {grid_position: 'YZJNJI,RYNUJY'}
+    event_bindings: {click: button_4_click}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_4
+    layout_properties: {grid_position: 'SOAKCU,YSRWTV'}
+  - name: label_9
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'E-wallet Balance:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    type: Label
+    layout_properties: {grid_position: 'GWXVUZ,JNPQLZ'}
+  - type: TextBox
+    properties: {background: '#DFFDFF'}
+    name: text_box_12
+    layout_properties: {grid_position: 'GWXVUZ,ZLCAXP'}
+    data_bindings:
+    - {property: text, code: 'self.item[''e_money'']', writeback: true}
+  - name: label_10
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'USD:
+
+        ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false, icon: ''}
+    type: Label
+    layout_properties: {grid_position: 'KZZEES,VKXQLJ YQLNZG,UKAGKX'}
+  - name: label_11
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'EURO:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    type: Label
+    layout_properties: {grid_position: 'KZZEES,VKXQLJ WWNQEJ,CCSXRF'}
+  - type: TextBox
+    properties: {background: '#DFFDFF'}
+    name: text_box_8
+    layout_properties: {grid_position: 'KZZEES,DDXKYY GEXDBZ,PNDODE'}
+    data_bindings:
+    - {property: text, code: 'self.item[''money_usd'']', writeback: true}
+  - type: TextBox
+    properties: {background: '#DFFDFF'}
+    name: text_box_9
+    layout_properties: {grid_position: 'KZZEES,DDXKYY JYKNAP,ADUZHQ'}
+    data_bindings:
+    - {property: text, code: 'self.item[''money_euro'']', writeback: true}
+  - name: label_12
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'INR:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    type: Label
+    layout_properties: {grid_position: 'KZZEES,UYQAKU LINQDE,UAAGOB'}
+  - name: label_13
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'SWIS:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    type: Label
+    layout_properties: {grid_position: 'KZZEES,UYQAKU JUSUDR,UTSVVG'}
+  - type: TextBox
+    properties: {background: '#DFFDFF'}
+    name: text_box_10
+    layout_properties: {grid_position: 'KZZEES,ICKSJX EFIRFZ,TBFXCC'}
+    data_bindings:
+    - {property: text, code: 'self.item[''money_inr'']', writeback: true}
+  - type: TextBox
+    properties: {background: '#DFFDFF'}
+    name: text_box_11
+    layout_properties: {grid_position: 'KZZEES,ICKSJX IZOKHN,ZTIDKH'}
+    data_bindings:
+    - {property: text, code: 'self.item[''money_swis'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'User Information:', font_size: 18, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '#3FE5FF',
+      bold: true, underline: false, icon: ''}
+    name: label_15
+    layout_properties: {grid_position: 'CGRUUL,ZMBKJP'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Username:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'OIKCRA,RTNSTD'}
+  - type: TextBox
+    properties: {background: '#DFFDFF'}
+    name: text_box_1
+    layout_properties: {grid_position: 'OIKCRA,DYLGNT'}
+    data_bindings:
+    - {property: text, code: 'self.item[''username'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Email:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'PIBVJZ,TZOYZE'}
+  - type: TextBox
+    properties: {background: '#DFFDFF'}
+    name: text_box_2
+    layout_properties: {grid_position: 'PIBVJZ,ITEBST'}
+    data_bindings:
+    - {property: text, code: 'self.item[''email'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Password:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_3
+    layout_properties: {grid_position: 'QDUFKO,XDTQWA'}
+  - type: TextBox
+    properties: {background: '#DFFDFF'}
+    name: text_box_3
+    layout_properties: {grid_position: 'QDUFKO,ZUDXTS'}
+    data_bindings:
+    - {property: text, code: 'self.item[''password'']', writeback: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Aadhar:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_4
+    layout_properties: {grid_position: 'DBPYDK,RWDOYS'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: number, spacing_below: small, italic: false,
+      background: '#DFFDFF', bold: false, underline: false}
+    name: text_box_5
+    layout_properties: {grid_position: 'DBPYDK,GZGSDC'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Pan:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_5
+    layout_properties: {grid_position: 'TNDAHE,GHVEIP'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '#DFFDFF', bold: false, underline: false}
+    name: text_box_6
+    layout_properties: {grid_position: 'TNDAHE,RSAQKK'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: Phone, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_6
+    layout_properties: {grid_position: 'KIPYOR,WHSSKM'}
+  - type: TextBox
+    properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: number, spacing_below: small, italic: false,
+      background: '#DFFDFF', bold: false, underline: false}
+    name: text_box_4
+    layout_properties: {grid_position: 'KIPYOR,LPPYMD'}
+    data_bindings:
+    - {property: text, code: 'self.item[''phone'']', writeback: true}
+    event_bindings: {pressed_enter: text_box_4_pressed_enter}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Address:', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_7
+    layout_properties: {grid_position: 'TBCJSQ,MWVAVH'}
+  - type: TextBox
+    properties: {background: '#DFFDFF'}
+    name: text_box_7
+    layout_properties: {grid_position: 'TBCJSQ,NQDBXJ'}
+    data_bindings:
+    - {property: text, code: 'self.item[''address'']', writeback: true}
+  - type: Button
+    properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '#000000', visible: true, text: edit, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '#0770FF', bold: true, underline: false, icon: 'fa:pencil'}
+    name: button_1
+    layout_properties: {grid_position: 'UVNOFD,JRHSBZ'}
+    event_bindings: {click: button_1_click}
+  - type: Button
+    properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '#000000', visible: true, text: delete, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '#0770FF', bold: true, underline: false, icon: 'data:image/jpeg;base64,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'}
+    name: button_2
+    layout_properties: {grid_position: 'UVNOFD,YPWAOX'}
+    event_bindings: {click: button_2_click}
+  - type: Button
+    properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '#000000', visible: true, text: back, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '#0770FF', bold: true, underline: false, icon: 'fa:backward'}
+    name: button_3
+    layout_properties: {grid_position: 'UVNOFD,HNCBJY'}
+    event_bindings: {click: button_3_click}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1
+    layout_properties: {grid_position: 'VULHFJ,ROXEZF'}
+  - name: outlined_card_1_copy
+    properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: none, spacing_above: none, col_widths: '{"VMILPR":8,"FDANOO":15,"HAKDVS":15}',
+      spacing_below: none, background: 'theme:On Surface Variant'}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'ETAHVA,OVCSSO', full_width_row: true}
+    components:
+    - name: label_1_copy
+      properties: {text: CopyRight2023@Gwallet, align: left, bold: true, font_size: 16,
+        visible: true, role: input-prompt, foreground: 'theme:On Primary'}
+      type: Label
+      layout_properties: {grid_position: 'XSXLAE,XVKBKL'}
+    - name: label_2_copy
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:On
+          Primary', visible: true, text: Disclaimer, font_size: 18, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      type: Label
+      layout_properties: {grid_position: 'XSXLAE,VMILPR'}
+    - name: label_3_copy
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:On
+          Primary', visible: true, text: Privacy Policy, font_size: 18, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
+      type: Label
+      layout_properties: {grid_position: 'XSXLAE,FDANOO'}
+    - name: label_4_copy
+      properties: {role: null, align: right, tooltip: '', border: '', foreground: 'theme:On
+          Primary', visible: true, text: Code Of Commitment, font_size: 18, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: true, underline: false, icon: ''}
+      type: Label
+      layout_properties: {grid_position: 'XSXLAE,HAKDVS'}

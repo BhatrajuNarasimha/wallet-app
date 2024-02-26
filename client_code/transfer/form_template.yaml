@@ -1,0 +1,191 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
+    role: null, html: ''}
+components:
+- type: ColumnPanel
+  properties: {role: outlined-card, col_widths: '{}'}
+  name: outlined_card_2
+  layout_properties: {slot: default}
+  components:
+  - name: flow_panel_1_copy
+    properties: {}
+    type: FlowPanel
+    layout_properties: {grid_position: 'OERPGZ,LKOFFV', full_width_row: true}
+    components:
+    - name: image_1_copy_copy
+      properties: {role: null, vertical_align: center, height: 44.80000305175781,
+        tooltip: '', border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
+        spacing_above: small, source: _/theme/GW-logo.jpg, spacing_below: small, background: white,
+        horizontal_align: right}
+      type: Image
+      layout_properties: {width: 89.19999694824219}
+    - name: label_7_copy_2_copy
+      properties: {text: 'G-Wallet         ', font_size: 25, align: left, bold: true,
+        font: a, italic: false, underline: false, foreground: black}
+      type: Label
+      layout_properties: {}
+    - name: spacer_3_copy_copy
+      properties: {height: 58.19996643066406}
+      type: Spacer
+      layout_properties: {width: 315.4630122070312}
+    - name: column_panel_1_copy
+      properties: {foreground: '', col_spacing: none, col_widths: '{"DZACHX":9,"EQLJSK":9,"IYMZZI":9,"QMIILD":9,"PIMIYE":8,"YSLIKN":6,"LADGEM":10}'}
+      type: ColumnPanel
+      layout_properties: {width: 800, expand: false}
+      components:
+      - name: link_2
+        properties: {text: Deposit, align: center, bold: true, foreground: black}
+        type: Link
+        layout_properties: {grid_position: 'MNPBPI,DZACHX'}
+        event_bindings: {click: link_2_click}
+      - name: link_3
+        properties: {text: Money Transfer, bold: true, align: center, foreground: black}
+        type: Link
+        layout_properties: {grid_position: 'MNPBPI,EQLJSK'}
+        event_bindings: {click: link_3_click}
+      - name: link_4
+        properties: {text: Withdraw, bold: true, align: center, foreground: black}
+        type: Link
+        layout_properties: {grid_position: 'MNPBPI,IYMZZI'}
+        event_bindings: {click: link_4_click}
+      - name: link_5
+        properties: {align: center, bold: true, text: Company, foreground: black}
+        type: Link
+        layout_properties: {grid_position: 'MNPBPI,QMIILD'}
+      - name: link_6
+        properties: {text: Career, align: center, bold: true, foreground: black}
+        type: Link
+        layout_properties: {grid_position: 'MNPBPI,PIMIYE'}
+        event_bindings: {click: link_6_click}
+      - name: link_7
+        properties: {text: Help, align: center, bold: true, foreground: black}
+        type: Link
+        layout_properties: {grid_position: 'MNPBPI,YSLIKN'}
+        event_bindings: {click: link_7_click}
+      - name: link_1_copy
+        properties: {text: Home, bold: true, foreground: black, align: center}
+        type: Link
+        layout_properties: {grid_position: 'MNPBPI,BXAHGU'}
+        event_bindings: {click: link_1_click}
+      - name: link_13
+        properties: {align: center, bold: true, text: Logout, foreground: black, icon: 'fa:sign-out'}
+        type: Link
+        layout_properties: {grid_position: 'MNPBPI,LADGEM'}
+        event_bindings: {click: link_13_click}
+  - name: label_1_copy
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: white,
+      visible: true, text: Self Transfer, font_size: 25, font: a, spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '#258ee1',
+      bold: true, underline: false, icon: ''}
+    type: Label
+    layout_properties: {grid_position: 'ZOYLFD,VKGZWP', full_width_row: true}
+  - name: spacer_2
+    properties: {height: 11.79998779296875}
+    type: Spacer
+    layout_properties: {grid_position: 'CYWRBL,XVKHSD'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '#2887d1',
+      visible: true, text: '', font_size: 25, font: a, spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: true, underline: true,
+      icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'ICWNHQ,DVPVZE'}
+  - name: spacer_3
+    properties: {height: 8.399932861328125}
+    type: Spacer
+    layout_properties: {grid_position: 'BDGTGD,XWLTMN'}
+  - name: image_1_copy
+    properties: {source: 'https://cdni.iconscout.com/illustration/premium/thumb/e-wallet-4487367-3722728.png',
+      height: 193.39993286132812}
+    type: Image
+    layout_properties: {grid_position: 'WTVDYB,MLYMXY'}
+  - name: button_3
+    properties: {role: outlined-button, align: right, tooltip: '', border: '', enabled: true,
+      foreground: white, visible: true, text: E-wallet to E-wallet, font_size: null,
+      font: '', spacing_above: small, icon_align: right, spacing_below: small, italic: false,
+      background: '#2887d1', bold: true, underline: false, icon: ''}
+    type: Button
+    layout_properties: {grid_position: 'CGEPFY,GMMFBW'}
+    event_bindings: {click: button_3_click}
+  - name: outlined_button_1
+    properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: white, visible: true, text: 'Account to E-wallet    ', font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '#2887d1', bold: true, underline: false, icon: ''}
+    type: Button
+    layout_properties: {grid_position: 'CGEPFY,ZWEKBC'}
+    event_bindings: {click: outlined_button_1_click}
+  - name: button_4
+    properties: {role: tonal-button, align: left, tooltip: '', border: '', enabled: true,
+      foreground: white, visible: true, text: E-wallet to Accounts, font_size: null,
+      font: '', spacing_above: small, icon_align: top, spacing_below: small, italic: false,
+      background: '#2887d1', bold: true, underline: false, icon: ''}
+    type: Button
+    layout_properties: {grid_position: 'CGEPFY,ZLJDAC'}
+    event_bindings: {click: button_4_click}
+  - name: button_5
+    properties: {role: outlined-button, align: right, tooltip: '', border: '', enabled: true,
+      foreground: white, visible: true, text: Transaction history, font_size: null,
+      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '#2887d1', bold: true, underline: false, icon: ''}
+    type: Button
+    layout_properties: {grid_position: 'RGCACM,BJWNCO'}
+    event_bindings: {click: button_5_click}
+  - name: outlined_button_3
+    properties: {text: Change Daily set limit, role: outlined-button, icon_align: right,
+      align: center, background: '#2887d1', foreground: white, bold: true}
+    type: Button
+    layout_properties: {grid_position: 'RGCACM,VRXEKC'}
+    event_bindings: {click: outlined_button_3_click}
+  - name: outlined_button_2
+    properties: {text: 'Auto-Top up              ', role: outlined-button, align: left,
+      background: '#2887d1', foreground: white, bold: true}
+    type: Button
+    layout_properties: {grid_position: 'RGCACM,XNWBJC'}
+    event_bindings: {click: outlined_button_2_click}
+    data_bindings: []
+  - type: Spacer
+    properties: {height: 108.25}
+    name: spacer_1
+    layout_properties: {grid_position: 'JCBUGT,SUDTZD'}
+  - name: outlined_card_1
+    properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: none, spacing_above: none, col_widths: '{"VMILPR":8,"HAKDVS":15,"XVKBKL":13,"AKBZGS":12,"NFTMSZ":12}',
+      spacing_below: none, background: '#2270ad'}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'OTWKWZ,HRWURG', full_width_row: true}
+    components:
+    - name: label_1_copy_copy
+      properties: {text: CopyRight2023@Gwallet, align: left, bold: false, font_size: 12,
+        visible: true, role: input-prompt, foreground: 'theme:On Primary'}
+      type: Label
+      layout_properties: {grid_position: 'XSXLAE,XVKBKL'}
+    - name: label_2
+      properties: {role: null, align: right, tooltip: '', border: '', foreground: 'theme:On
+          Primary', visible: true, text: Disclaimer, font_size: 12, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      type: Label
+      layout_properties: {grid_position: 'XSXLAE,VMILPR'}
+    - name: label_3
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:On
+          Primary', visible: true, text: Privacy Policy, font_size: 12, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      type: Label
+      layout_properties: {grid_position: 'XSXLAE,AKBZGS'}
+    - name: label_4
+      properties: {role: null, align: right, tooltip: '', border: '', foreground: 'theme:On
+          Primary', visible: true, text: Code Of Commitment, font_size: 12, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      type: Label
+      layout_properties: {grid_position: 'XSXLAE,HAKDVS'}
+    - name: link_8
+      properties: {align: right, text: Customer Service, foreground: white, font_size: 12,
+        bold: false}
+      type: Link
+      layout_properties: {grid_position: 'XSXLAE,NFTMSZ'}
+      event_bindings: {click: link_8_click}
